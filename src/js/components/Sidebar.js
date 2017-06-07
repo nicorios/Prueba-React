@@ -1,5 +1,5 @@
 import React from "react";
-
+import { Link } from 'react-router-dom'
 
 export default class Sidebar extends React.Component {
   render() {
@@ -21,13 +21,13 @@ export default class Sidebar extends React.Component {
             </div>
           </div>
         </li>
-        <li class="active" ><a href="#"><i class="mdi-action-home"></i> Principal</a></li>
-        <li><a href="#"><i
-            class="mdi-action-accessibility"></i> Socios</a></li>
+        <li class="active" ><Link to={'/principal'}><i class="mdi-action-home"></i> Principal</Link></li>
+        <li><Link to={'/socios'}><i
+            class="mdi-action-accessibility"></i> Socios</Link></li>
 
         
-          <li><a href="#"><i class="mdi-content-sort"></i>
-            Estad&iacutesticas</a></li>
+          <li><Link to={'/estadisticas'}><i class="mdi-content-sort"></i>
+            Estadísticas</Link></li>
           <li><a href="#"><i class="mdi-action-settings"></i>
             Configuración</a></li>
         
